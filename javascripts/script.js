@@ -56,9 +56,9 @@ $(document).ready(() => {
     if (selectHeader) {
         const headerScrolled = () => {
             if (window.scrollY > 50) {
-                selectHeader.classList.add('header-scrolled')
+                selectHeader.classList.add('scrolled')
             } else {
-                selectHeader.classList.remove('header-scrolled')
+                selectHeader.classList.remove('scrolled')
             }
         }
         window.addEventListener('load', headerScrolled)

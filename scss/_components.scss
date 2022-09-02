@@ -8,9 +8,13 @@
 }
 
 @mixin box-shadow-1 {
-    box-shadow: 0 0 30px rgba($color: #0d0d0d, $alpha: 0.1);
+    box-shadow: 0 5px 30px rgba($color: $dark_color_1, $alpha: 0.05);
 }
 
 @mixin box-shadow-2 {
-    box-shadow: 0 0 30px rgba($color: #0d0d0d, $alpha: 0.25);
+    box-shadow: 0 5px 30px rgba($color: $dark_color_1, $alpha: 0.1);
+}
+
+@mixin box-shadow-3 {
+    box-shadow: 0 5px 30px rgba($color: $dark_color_1, $alpha: 0.15);
 }

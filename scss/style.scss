@@ -52,7 +52,15 @@ h3,
 h4,
 h5,
 h6 {
+    color: $color_4;
     font-family: $font_family_1;
+    font-weight: 700;
+}
+
+p{
+    font-family: $font_family_2;
+    color: rgba($color: $color_4, $alpha: 0.5);
+    text-align: justify;
 }
 
 .btn {
@@ -60,7 +68,7 @@ h6 {
     color: $dark_color_2;
     background-color: transparent;
     border: 2px solid $dark_color_1;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     transition: all 0.3s ease;
 
     &:hover,
@@ -89,13 +97,60 @@ main {
 section {
     width: 100%;
     min-height: 10vh;
-    padding: 2rem;
+    padding: 4rem 0rem;
+    margin: 2rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            font-family: $font_family_1;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            color: $color_4;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 50px;
+                height: 3px;
+                background: $color_3;
+                bottom: 0;
+                left: calc(50% - 25px);
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            color: rgba($color: $dark_color_1, $alpha: 0.5);
+            font-family: $font_family_2;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: $ss-sm){
+        padding: 1rem 0rem;
+    }
+    @media screen and (max-width: $ss-md){
+        padding: 3rem 0rem;
+        margin: 1rem 0rem;
+    }
 }
 
 @import './partials/header';
 @import './section/hero';
+@import './section/about';
 @import './partials/footer';
