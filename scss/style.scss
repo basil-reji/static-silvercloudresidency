@@ -106,7 +106,7 @@ section {
 
     .section-title {
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -153,4 +153,5 @@ section {
 @import './partials/header';
 @import './section/hero';
 @import './section/about';
+@import './section/services';
 @import './partials/footer';
