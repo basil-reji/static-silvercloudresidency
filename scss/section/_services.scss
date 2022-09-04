@@ -1,6 +1,10 @@
 #services,
 .services {
+    .section-title {
+        padding-bottom: 1rem;
+    }
     .service-item {
+        padding-top: 1rem;
         padding: 2.5rem;
         background: $white;
         height: 100%;
@@ -243,5 +247,11 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width: $ss-sm) {
+    .img{
+        display: none;
     }
 }

@@ -79,6 +79,21 @@ p {
   background-color: #023047;
 }
 
+.btn-fill {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  background-color: #219EBC;
+  padding: 0.5rem 1rem;
+}
+.btn-fill:hover {
+  border: none;
+  background-color: #90E0EF;
+  color: #023047;
+}
+
 main {
   width: 100%;
 }
@@ -97,9 +112,12 @@ section {
   align-items: center;
   position: relative;
 }
+section:last-child {
+  padding-bottom: 1rem;
+}
 section .section-title {
   text-align: center;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -642,8 +660,13 @@ section .section-title p {
   }
 }
 
+#services .section-title,
+.services .section-title {
+  padding-bottom: 1rem;
+}
 #services .service-item,
 .services .service-item {
+  padding-top: 1rem;
   padding: 2.5rem;
   background: #fff;
   height: 100%;
@@ -863,6 +886,133 @@ section .section-title p {
   transform: translate(0%);
 }
 
+@media screen and (max-width: 768px) {
+  .img {
+    display: none;
+  }
+}
+.contact .map {
+  margin: 2rem 0rem;
+  background-color: white;
+  width: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(42, 46, 52, 0.05);
+  transition: all 0.3s ease;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .map:hover {
+  box-shadow: 0 5px 30px rgba(42, 46, 52, 0.1);
+}
+.contact .map iframe {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 60vh;
+}
+.contact .info-box {
+  color: rgba(42, 46, 52, 0.1);
+  cursor: pointer;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 30px rgba(42, 46, 52, 0.05);
+  transition: all 0.3s ease;
+}
+.contact .info-box i {
+  font-size: 2rem;
+  color: #023047;
+  border-radius: 50%;
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+}
+.contact .info-box h3 {
+  font-size: 1.25rem;
+  color: #219EBC;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.contact .info-box p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+.contact .info-box:hover {
+  box-shadow: 0 5px 30px rgba(42, 46, 52, 0.1);
+}
+.contact .info-box:hover i {
+  color: #90E0EF;
+}
+.contact .info-box:hover h3 {
+  color: #90E0EF;
+}
+.contact .info-box:hover p {
+  color: rgba(2, 48, 71, 0.8);
+}
+.contact .contact-form {
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 30px rgba(42, 46, 52, 0.05);
+  padding: 2rem 2rem;
+  background: #fff;
+}
+.contact .contact-form:hover, .contact .contact-form:active, .contact .contact-form:focus {
+  box-shadow: 0 5px 30px rgba(42, 46, 52, 0.1);
+}
+.contact .contact-form input, .contact .contact-form textarea {
+  border-radius: 0.1rem;
+  padding: 0.65rem 1rem;
+  margin: 0.1rem 0rem;
+  color: #151515;
+}
+.contact .contact-form input:hover, .contact .contact-form input:active, .contact .contact-form input:focus, .contact .contact-form textarea:hover, .contact .contact-form textarea:active, .contact .contact-form textarea:focus {
+  box-shadow: none;
+}
+.contact .contact-form input:focus, .contact .contact-form textarea:focus {
+  border-color: #90E0EF;
+}
+.contact .contact-form input::placeholder, .contact .contact-form textarea::placeholder {
+  color: rgba(21, 21, 21, 0.5);
+  font-family: "Poppins", sans-serif;
+}
+.contact .contact-form .sent-message {
+  display: none;
+  border-radius: 0.5rem;
+  background-color: #21BF73;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}
+.contact .contact-form .error-message {
+  display: none;
+  border-radius: 0.5rem;
+  background-color: #FC4F4F;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #footer {
   width: 100%;
   margin-top: auto;

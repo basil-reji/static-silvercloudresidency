@@ -86,7 +86,24 @@ p{
     }
 }
 
+.btn-fill{
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: $white;
+    background-color: transparent;
+    border: none;
+    background-color: $color_3;
+    padding: 0.5rem 1rem;
+
+    &:hover{
+        border: none;
+        background-color: $color_1;
+        color: $color_4;
+    }
+}
+
 main {
+    
     width: 100%;
 }
 
@@ -104,9 +121,13 @@ section {
     align-items: center;
     position: relative;
 
+    &:last-child{
+        padding-bottom: 1rem;
+    }
+
     .section-title {
         text-align: center;
-        padding-bottom: 2.5rem;
+        padding-bottom: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -154,4 +175,5 @@ section {
 @import './section/hero';
 @import './section/about';
 @import './section/services';
+@import './section/contact';
 @import './partials/footer';
