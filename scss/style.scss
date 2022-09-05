@@ -103,8 +103,7 @@ p{
 }
 
 main {
-    
-    width: 100%;
+    max-width: 100%;
 }
 
 .box-shadow {
@@ -175,5 +174,6 @@ section {
 @import './section/hero';
 @import './section/about';
 @import './section/services';
+@import './section/gallery';
 @import './section/contact';
 @import './partials/footer';

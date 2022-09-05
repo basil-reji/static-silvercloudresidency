@@ -23,9 +23,17 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
         integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css"
+        integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -272,7 +280,81 @@
 
         </section>
 
-        <!-- <section class="about">
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-title" data-aos="zoom-out">
+                    <h2>Gallery</h2>
+                </div>
+
+                <div class="row g-1 d-flex justify-content-center gallery-container" data-aos="fade-up">
+
+                    <div class="col-lg-3 col-md-4 col-6 gallery-item filter-app">
+                        <a href="/assets/images/cityscape_1.jpg" data-gallery="galleryGallery"
+                            class="gallery-lightbox preview-link">
+                            <div class="gallery-img"><img src="/assets/images/cityscape_1.jpg" class="img-fluid"
+                                    alt="IEEE Kerala Section AGM 2021">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 gallery-item filter-app">
+                        <a href="/assets/images/cityscape_2.jpg" data-gallery="galleryGallery"
+                            class="gallery-lightbox preview-link">
+                            <div class="gallery-img"><img src="/assets/images/cityscape_2.jpg" class="img-fluid"
+                                    alt="IEEE Kerala Section AGM 2021">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 gallery-item filter-app">
+                        <a href="/assets/images/cityscape_3.jpg" data-gallery="galleryGallery"
+                            class="gallery-lightbox preview-link">
+                            <div class="gallery-img"><img src="/assets/images/cityscape_3.jpg" class="img-fluid"
+                                    alt="IEEE Kerala Section AGM 2021">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 gallery-item filter-app">
+                        <a href="/assets/images/cityscape_4.jpg" data-gallery="galleryGallery"
+                            class="gallery-lightbox preview-link">
+                            <div class="gallery-img"><img src="/assets/images/cityscape_4.jpg" class="img-fluid"
+                                    alt="IEEE Kerala Section AGM 2021">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 gallery-item filter-app">
+                        <a href="/assets/images/cityscape_3.jpg" data-gallery="galleryGallery"
+                            class="gallery-lightbox preview-link">
+                            <div class="gallery-img"><img src="/assets/images/cityscape_3.jpg" class="img-fluid"
+                                    alt="IEEE Kerala Section AGM 2021">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 gallery-item filter-app">
+                        <a href="/assets/images/cityscape_1.jpg" data-gallery="galleryGallery"
+                            class="gallery-lightbox preview-link">
+                            <div class="gallery-img"><img src="/assets/images/cityscape_1.jpg" class="img-fluid"
+                                    alt="IEEE Kerala Section AGM 2021">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 gallery-item filter-app">
+                        <a href="/assets/images/cityscape_3.jpg" data-gallery="galleryGallery"
+                            class="gallery-lightbox preview-link">
+                            <div class="gallery-img"><img src="/assets/images/cityscape_3.jpg" class="img-fluid"
+                                    alt="IEEE Kerala Section AGM 2021">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="d-flex w-100 justify-content-center align-items-center">
+                    <a href="/#" class="btn">View More</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about">
 
             <div class="container">
                 <div class="about-residency">
@@ -301,7 +383,7 @@
                 </div>
             </div>
 
-        </section> -->
+        </section>
 
         <section id="contact" class="contact" style="padding: 1rem 0rem ;">
             <div class="container">
@@ -358,6 +440,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"
+        integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
     <script src="/javascripts/tilt.min.js"></script>
 

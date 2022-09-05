@@ -99,5 +99,39 @@ $(document).ready(() => {
     $('.carousel').carousel({
         interval: 2000
     });
-    
+
+    window.addEventListener('load', () => {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        })
+    });
+
+    window.addEventListener('load', () => {
+        let isotopeContainer = select('.gallery-container');
+        if (isotopeContainer) {
+            let isotopeIsotope = new Isotope(isotopeContainer, {
+                itemSelector: '.gallery-item',
+            });
+        }
+
+    });
+
+    const glightbox = GLightbox({
+        selector: '.gallery-lightbox'
+    });
+
+
+
+    // window.addEventListener('load', () => {
+    //     let galleryContainer = select('.gallery-container');
+    //     if (galleryContainer) {
+    //         let galleryIsotope = new Isotope(galleryContainer, {
+    //             itemSelector: '.gallery-item',
+    //         });
+    //     }
+
+    // });
 });
