@@ -161,6 +161,14 @@ section {
         }
     }
 
+    .section-footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     @media screen and (max-width: $ss-sm){
         padding: 1rem 0rem;
     }
@@ -176,4 +184,5 @@ section {
 @import './section/services';
 @import './section/gallery';
 @import './section/contact';
+@import './pages/booking';
 @import './partials/footer';
