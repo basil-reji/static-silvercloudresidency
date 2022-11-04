@@ -449,6 +449,7 @@ section .section-footer {
   background-size: cover;
   width: 100%;
   height: 100%;
+  background-position: center center;
 }
 #hero-section #hero #hero-carousel button {
   z-index: 5;
